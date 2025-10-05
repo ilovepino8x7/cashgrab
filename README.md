@@ -2,7 +2,7 @@
 
 ## Description
 Cash Grab is a (very) basic tower defense game where you place down towers with different abilities, from shooting old Qing Dynasty style coins at extreme pace to defeat the enemies, to freezing them still to stop their advance.
-### ONLY FOR DEVICES WITH A MOUSE OR TRACKPAD.
+### Works on phone, but ideally would be played on a device with a mouse or trackpad.
 
 ## Credits:
 https://www.textstudio.com/ - Font Generator for the logo
