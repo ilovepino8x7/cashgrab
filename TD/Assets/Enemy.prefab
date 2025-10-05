@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5700775675452791157}
   - component: {fileID: 8094756022501038732}
   - component: {fileID: 271035334785812257}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 0}
   rb: {fileID: 271035334785812257}
-  moveSpeed: 90
+  moveSpeed: 70
   end: {fileID: 0}
 --- !u!50 &271035334785812257
 Rigidbody2D:
@@ -167,7 +167,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2

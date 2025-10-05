@@ -438,9 +438,15 @@
 -analyzer:"/Applications/Unity/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"/Applications/Unity/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Assets/coinMove.cs"
+"Assets/coinShooter.cs"
 "Assets/EnemyMove.cs"
+"Assets/iceTower.cs"
+"Assets/landScript.cs"
 "Assets/LogicManager.cs"
+"Assets/spawnBullets.cs"
 "Assets/spawnEnemy.cs"
+"Assets/startScreen.cs"
 -langversion:9.0
 /deterministic
 /optimize+

@@ -6,8 +6,9 @@ public class EnemyMove : MonoBehaviour
     private int pathNum = 0;
     private Transform target;
     public Rigidbody2D rb;
-    public int moveSpeed = 90;
+    private int moveSpeed = 70;
     public GameObject end;
+    private int baseSpeed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,6 +16,7 @@ public class EnemyMove : MonoBehaviour
         target = logic.path[pathNum];
         rb = GetComponent<Rigidbody2D>();
         end = GameObject.FindGameObjectWithTag("End");
+        baseSpeed = moveSpeed;
 
     }
 
@@ -31,11 +33,14 @@ public class EnemyMove : MonoBehaviour
             }
             else if (target == end.transform)
             {
-                logic.health -= 5;
+                logic.health -= 10;
                 Destroy(gameObject);
             }
-            target = logic.path[pathNum];
-            
+            if (pathNum < logic.path.Length)
+            {
+                target = logic.path[pathNum];
+            }
+
         }
 
 
@@ -46,5 +51,22 @@ public class EnemyMove : MonoBehaviour
     {
         Vector2 dir = (target.position - transform.position).normalized;
         rb.linearVelocity = dir * moveSpeed * Time.deltaTime;
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Ayo")
+        {
+            logic.MoMoney(20);
+            Destroy(other.gameObject);
+            Destroy(transform.gameObject);
+        }
+    }
+    public void updateSpeed(int speed)
+    {
+        moveSpeed = speed;
+    }
+    public void resetSpeed()
+    {
+        moveSpeed = baseSpeed;
     }
 }

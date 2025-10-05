@@ -6,11 +6,15 @@ TagManager:
   tags:
   - Brain
   - End
+  - Ayo
+  - Pounds
+  - ScoreControl
+  - Health
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
   - 
@@ -42,6 +46,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Defenses
+    uniqueID: 3040736899
     locked: 0
   m_RenderingLayers:
   - Default
